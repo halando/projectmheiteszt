@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" routerLink="">MHEI</a>
+      <a class="navbar-brand" routerLink=""><i class="bi bi-sina-weibo"></i>MHEI</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -17,6 +17,15 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="kapcsolat" routerLinkActive="active-link">Kapcsolatok</a>
+          </li>
+          <li  class="nav-item">
+            <a class="nav-link" routerLink="profile" routerLinkActive="active-link">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"routerLink="userlist" routerLinkActive="active-link">Users</a>
+          </li>
+          <li *ngIf="currentUser" class="nav-item">
+            <a class="nav-link" (click)="logout()">Logout</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

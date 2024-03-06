@@ -6,6 +6,10 @@ import { KornyezetvedelemComponent } from './pages/kornyezetvedelem/kornyezetved
 import { KapcsolatComponent } from './pages/kapcsolat/kapcsolat.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { UserListComponent } from './pages/user-list/user-list.component';
+import { sadminGuard } from './sadmin.guard';
+
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -13,7 +17,8 @@ const routes: Routes = [
   {path:'jegy', component:JegyComponent},
   {path:'kornyezetvedelem', component:KornyezetvedelemComponent},
   {path:'kapcsolat', component:KapcsolatComponent},
-  
+  {path:'profile', component:ProfileComponent},
+  {path:'user-list',component:UserListComponent,canActivate:[sadminGuard]},
   {path:'register', component:RegisterComponent}
 ];
 

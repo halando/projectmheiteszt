@@ -14,6 +14,8 @@ import { KapcsolatComponent } from './pages/kapcsolat/kapcsolat.component';
 import { KornyezetvedelemComponent } from './pages/kornyezetvedelem/kornyezetvedelem.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { UserListComponent } from './pages/user-list/user-list.component';
 
 
 
@@ -27,7 +29,9 @@ import { RegisterComponent } from './pages/register/register.component';
     KapcsolatComponent,
     KornyezetvedelemComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProfileComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
