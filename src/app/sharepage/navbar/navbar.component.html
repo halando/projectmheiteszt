@@ -9,25 +9,28 @@
           <li class="nav-item">
             <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Kezdőlap</a>
           </li>
-          <li class="nav-item">
+          <li *ngIf="currentUser" class="nav-item">
             <a class="nav-link" routerLink="jegy"  routerLinkActive="active-link">Jegyek</a>
           </li>
-          <li class="nav-item">
+          <li *ngIf="currentUser" class="nav-item">
             <a class="nav-link" routerLink="kornyezetvedelem" routerLinkActive="active-link">Környezetvédelem</a>
           </li>
-          <li class="nav-item">
+          <li *ngIf="currentUser" class="nav-item">
             <a class="nav-link" routerLink="kapcsolat" routerLinkActive="active-link">Kapcsolatok</a>
           </li>
-          <li  class="nav-item">
+          <li  *ngIf="currentUser" class="nav-item">
             <a class="nav-link" routerLink="profile" routerLinkActive="active-link">Profile</a>
           </li>
-          <li class="nav-item">
+          <li *ngIf="currentUser?.claims.includes('SAdmin')" class="nav-item">
+            <a class="nav-link"routerLink="/userlist">SAUsers</a>
+          </li>
+          <li *ngIf="currentUser" class="nav-item">
             <a class="nav-link"routerLink="userlist" routerLinkActive="active-link">Users</a>
           </li>
           <li *ngIf="currentUser" class="nav-item">
             <a class="nav-link" (click)="logout()">Logout</a>
           </li>
-          <li class="nav-item dropdown">
+          <li *ngIf="!currentUser" class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               login
             </a>

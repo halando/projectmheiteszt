@@ -1,17 +1,25 @@
-<div class="card" style="width: 18rem;">
-   
-    <div class="card-body">
-      <h5 class="card-title">Login</h5>
+<body>
+  <div class="hero">
+    <div class="card" style="width: 18rem;">
       
-      <div class="form-floating mb-3">
-        <input type="text" [(ngModel)]="loginModel.username" class="form-control" id="lusername">
-        <label for="lusername">Username</label>
-      </div>   
-      <div class="form-floating">
-        <input [(ngModel)]="loginModel.password" type="password" class="form-control" id="lpassword" placeholder="Password">
-        <label for="lpassword">Password</label>
-      </div>
-      <button (click)="login()" type="button" class="btn btn-secondary">Login</button>
+        <div class="card-body">
+          <h5 class="card-title">Login</h5>
+          
+          <div class="form-floating mb-3">
+            <input type="text" [(ngModel)]="loginModel.username" class="form-control" id="lusername">
+            <label for="lusername"><i class="bi bi-person-circle"></i>Username</label>
+          </div>   
+          <div class="form-floating">
+            <input [(ngModel)]="loginModel.password" type="password" class="form-control" id="lpassword" placeholder="Password">
+            <label for="lpassword"><i class="bi bi-person-lock"></i>Password</label>
+          </div>
+          <p >
+          <a href="register">Ha még nincs regisztrációd.<i class="bi bi-arrow-right"></i></a>
+            
+          </p>
+          <button (click)="login()" type="button" class="btn btn-secondary">Login</button>
 
+        </div>
+      </div>
     </div>
-  </div>
+</body>
