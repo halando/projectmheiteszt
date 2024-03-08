@@ -10,6 +10,13 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { UserListComponent } from './pages/user-list/user-list.component';
 import { sadminGuard } from './sadmin.guard';
 
+import { TicketComponent } from './additional-pages/ticket/ticket.component';
+import { VersenyekComponent } from './additional-pages/versenyek/versenyek.component';
+import { FishingShopComponent } from './additional-pages/fishing-shop/fishing-shop.component';
+import { FishComponent } from './additional-pages/fish/fish.component';
+import { EventsComponent } from './additional-pages/events/events.component';
+import { AdditionalComponent } from './additional-pages/additional/additional.component';
+
 
 const routes: Routes = [
   {path:'', component:LoginComponent},
@@ -19,7 +26,14 @@ const routes: Routes = [
   {path:'kapcsolat', component:KapcsolatComponent},
   {path:'profile', component:ProfileComponent},
   {path:'user-list',component:UserListComponent,canActivate:[sadminGuard]},
-  {path:'register', component:RegisterComponent}
+  {path:'register', component:RegisterComponent},
+  
+  {path:'ticket', component:TicketComponent},
+  {path:'versenyek', component:VersenyekComponent},
+  {path:'fishing-shop', component:FishingShopComponent},
+  {path:'fish', component:FishComponent},
+  {path:'events', component:EventsComponent},
+  {path:'additional', component:AdditionalComponent},
 ];
 
 @NgModule({

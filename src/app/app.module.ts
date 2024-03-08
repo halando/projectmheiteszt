@@ -17,6 +17,13 @@ import { RegisterComponent } from './pages/register/register.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { UserListComponent } from './pages/user-list/user-list.component';
 
+import { TicketComponent } from './additional-pages/ticket/ticket.component';
+import { FishingShopComponent } from './additional-pages/fishing-shop/fishing-shop.component';
+import { FishComponent } from './additional-pages/fish/fish.component';
+import { AdditionalComponent } from './additional-pages/additional/additional.component';
+import { EventsComponent } from './additional-pages/events/events.component';
+import { VersenyekComponent } from './additional-pages/versenyek/versenyek.component';
+
 
 
 @NgModule({
@@ -31,7 +38,13 @@ import { UserListComponent } from './pages/user-list/user-list.component';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    UserListComponent
+    UserListComponent,
+    TicketComponent,
+    FishingShopComponent,
+    FishComponent,
+    AdditionalComponent,
+    EventsComponent,
+    VersenyekComponent
   ],
   imports: [
     BrowserModule,
