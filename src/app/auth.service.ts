@@ -26,14 +26,15 @@ export class AuthService {
     return this.userSub
   }
 
-  getCompanies(){
+  getUser(id:any){
     let headers= new HttpHeaders().set("Authorization","Bearer "+this.token)
-    return this.http.get(this.url+"Companies", {headers:headers})
+    return this.http.get(this.url+"user/"+id, {headers:headers})
   }
+ 
 
   getUsers(){
     let headers= new HttpHeaders().set("Authorization","Bearer "+this.token)
-    return this.http.get(this.url+"userlist", {headers:headers})
+    return this.http.get(this.url+"user-list", {headers:headers})
   }
 
   getClaims(id:any){
@@ -46,11 +47,7 @@ export class AuthService {
     return this.http.post(this.url+"userClaims/",body, {headers:headers})
   }
 
-  addCompany(company:any){
-    let headers= new HttpHeaders().set("Authorization","Bearer "+this.token)
-    return this.http.post(this.url+"Companies",company, {headers:headers})
-
-  }
+ 
   register(user:any){
     this.http.post(this.url+"Authentication/register",user)
     .subscribe(
@@ -60,18 +57,16 @@ export class AuthService {
       }
     )
   }
+ 
   update(user:any){
+    console.log("update",user)
     let head:any ={
       headers: new HttpHeaders().set("Authorization","Bearer "+this.token),
       'responseType':'text'
     }
-    this.http.post("https://localhost:5001/api/Authentication/update",user, head)
-    .subscribe(
-      {
-        next:()=>console.log("Sikeres Update"),
-        error:()=>console.log("Sikertelen  Update")
-      }
-    )
+    return this.http.put("https://localhost:5001/api/user/"+user.id,user, head)
+    
+    
   }
   changePassword(newPassword:any){
     let head:any ={
@@ -87,6 +82,22 @@ export class AuthService {
       }
     )
   }
+  changeMyPassword(newPassword:any){
+    let head:any ={
+      headers: new HttpHeaders({"Authorization":"Bearer "+this.token}),  
+      'responseType':'text'
+    }
+    console.log(newPassword)
+    
+    this.http.put("https://localhost:5001/api/user/changeMyPassword/",newPassword, head)
+    .subscribe(
+      {
+        next:()=>console.log("Sikeres Jelszóvált"),
+        error:()=>console.log("Sikertelen Jelszóvált")
+      }
+    )
+  }
+
 
   login(user:any){
     this.http.post(this.url+"Authentication/login",user)
@@ -112,6 +123,7 @@ export class AuthService {
       }
     )
   }
+
 
 
 }

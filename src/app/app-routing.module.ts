@@ -16,6 +16,7 @@ import { FishingShopComponent } from './additional-pages/fishing-shop/fishing-sh
 import { FishComponent } from './additional-pages/fish/fish.component';
 import { EventsComponent } from './additional-pages/events/events.component';
 import { AdditionalComponent } from './additional-pages/additional/additional.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 
 const routes: Routes = [
@@ -25,9 +26,11 @@ const routes: Routes = [
   {path:'kornyezetvedelem', component:KornyezetvedelemComponent},
   {path:'kapcsolat', component:KapcsolatComponent},
   {path:'profile', component:ProfileComponent},
+  {path:"profile/:id", component:ProfileComponent},
   {path:'user-list',component:UserListComponent,canActivate:[sadminGuard]},
   {path:'register', component:RegisterComponent},
-  
+  {path:'**',component:ErrorComponent},
+
   {path:'ticket', component:TicketComponent},
   {path:'versenyek', component:VersenyekComponent},
   {path:'fishing-shop', component:FishingShopComponent},

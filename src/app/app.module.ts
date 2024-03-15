@@ -23,6 +23,7 @@ import { FishComponent } from './additional-pages/fish/fish.component';
 import { AdditionalComponent } from './additional-pages/additional/additional.component';
 import { EventsComponent } from './additional-pages/events/events.component';
 import { VersenyekComponent } from './additional-pages/versenyek/versenyek.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 
 
@@ -44,7 +45,8 @@ import { VersenyekComponent } from './additional-pages/versenyek/versenyek.compo
     FishComponent,
     AdditionalComponent,
     EventsComponent,
-    VersenyekComponent
+    VersenyekComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
