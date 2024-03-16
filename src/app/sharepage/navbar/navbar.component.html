@@ -9,7 +9,7 @@
           <li class="nav-item">
             <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Kezdőlap</a>
           </li>
-          <li *ngIf="currentUser" class="nav-item">
+          <li  *ngIf="currentUser" class="nav-item">
             <a class="nav-link" routerLink="jegy"  routerLinkActive="active-link">Jegyek</a>
           </li>
           <li *ngIf="currentUser" class="nav-item">

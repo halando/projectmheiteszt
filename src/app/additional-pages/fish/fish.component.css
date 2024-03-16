@@ -1,0 +1,8 @@
+  
+  .dropdown-content {
+    display: none;
+  }
+
+  #toggle:checked + .dropdown-content {
+    display: block;
+  }

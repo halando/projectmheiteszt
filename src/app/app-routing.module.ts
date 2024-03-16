@@ -29,7 +29,7 @@ const routes: Routes = [
   {path:"profile/:id", component:ProfileComponent},
   {path:'user-list',component:UserListComponent,canActivate:[sadminGuard]},
   {path:'register', component:RegisterComponent},
-  {path:'**',component:ErrorComponent},
+  //{path:'**',component:ErrorComponent},
 
   {path:'ticket', component:TicketComponent},
   {path:'versenyek', component:VersenyekComponent},

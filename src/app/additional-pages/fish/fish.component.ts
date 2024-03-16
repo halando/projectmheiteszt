@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
 
 @Component({
   selector: 'app-fish',
@@ -6,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./fish.component.css']
 })
 export class FishComponent {
-
+  panelOpenState = false;
 }
+

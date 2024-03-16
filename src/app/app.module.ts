@@ -24,8 +24,10 @@ import { AdditionalComponent } from './additional-pages/additional/additional.co
 import { EventsComponent } from './additional-pages/events/events.component';
 import { VersenyekComponent } from './additional-pages/versenyek/versenyek.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,9 @@ import { ErrorComponent } from './pages/error/error.component';
     AppRoutingModule,
     NgbModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
