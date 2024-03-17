@@ -1,0 +1,9 @@
+mat-grid-tile {
+    background: lightblue;
+  }
+  mat-grid-list{
+    width:220%;
+    height: 100vh;
+    
+  }
+ 

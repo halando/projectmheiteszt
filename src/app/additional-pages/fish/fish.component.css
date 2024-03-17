@@ -1,4 +1,9 @@
-  
+*{
+  margin-top: 10px;
+
+}
+
+
   .dropdown-content {
     display: none;
   }
@@ -6,3 +11,10 @@
   #toggle:checked + .dropdown-content {
     display: block;
   }
+  img {
+    float: right; /* vagy right; */
+    margin-left: 10px; /* vagy más érték */
+    width: 300px;
+    height: 100px;
+    margin-top: 15px;
+}
