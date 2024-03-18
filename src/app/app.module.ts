@@ -29,6 +29,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatExpansionModule} from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
+import {MatListModule} from '@angular/material/list';
+import {MatTableModule} from '@angular/material/table';
+
 
 @NgModule({
   declarations: [
@@ -59,7 +62,9 @@ import { MatGridListModule } from '@angular/material/grid-list';
     HttpClientModule,
     BrowserAnimationsModule,
     MatExpansionModule,
-    MatGridListModule
+    MatGridListModule,
+    MatListModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

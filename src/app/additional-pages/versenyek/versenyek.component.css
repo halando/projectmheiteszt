@@ -1,9 +1,15 @@
-mat-grid-tile {
-    background: lightblue;
+table {
+    width: 100%;
+    background-color: aquamarine;
   }
-  mat-grid-list{
-    width:220%;
-    height: 100vh;
-    
+  button{
+    float: right;
+    margin-right: 20px;
   }
- 
+  th{
+    font-weight: bold;
+  }
+  a{
+    font-weight: bold;
+    color: whitesmoke;
+  }

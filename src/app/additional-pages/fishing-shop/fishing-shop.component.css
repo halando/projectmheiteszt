@@ -1,0 +1,15 @@
+button{
+    float: right;
+    margin-right: 10px;
+}
+a{
+    color: whitesmoke;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    
+  }
+th{
+    font-weight: bold;
+  }
