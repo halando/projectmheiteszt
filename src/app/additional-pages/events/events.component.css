@@ -1,4 +1,41 @@
-button{
+
+img{
+    float: right;
+    margin-right: 10px;
+    width:15%;
+    height:15vh;
+    margin-bottom: 10px;
+}
+#button1{
+    float: right;
+    margin-right: 480px;
+   
+}
+#button2{
+    float: right;
+    margin-right: 250px;
+}
+#button3{
+    float: right;
+    margin-right: 250px;
+}
+#button4{
+    float: right;
+    margin-right: 250px;
+}
+#button5{
+    float: right;
+    margin-right: 250px;
+}
+#button6{
+    float: right;
+    margin-right: 250px;
+}
+#button7{
+    float: right;
+    margin-right: 250px;
+}
+#button8{
     float: right;
     margin-right: 10px;
 }
