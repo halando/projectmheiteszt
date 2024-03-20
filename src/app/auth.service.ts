@@ -34,7 +34,7 @@ export class AuthService {
 
   getUsers(){
     let headers= new HttpHeaders().set("Authorization","Bearer "+this.token)
-    return this.http.get(this.url+"user-list", {headers:headers})
+    return this.http.get(this.url+"userlist", {headers:headers})
   }
 
   getClaims(id:any){

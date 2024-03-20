@@ -29,7 +29,7 @@ const routes: Routes = [
   {path:"profile/:id", component:ProfileComponent},
   {path:'user-list',component:UserListComponent,canActivate:[sadminGuard]},
   {path:'register', component:RegisterComponent},
-  //{path:'**',component:ErrorComponent},
+
 
   {path:'ticket', component:TicketComponent},
   {path:'versenyek', component:VersenyekComponent},
@@ -37,6 +37,7 @@ const routes: Routes = [
   {path:'fish', component:FishComponent},
   {path:'events', component:EventsComponent},
   {path:'additional', component:AdditionalComponent},
+  //{path:'**',component:ErrorComponent},
 ];
 
 @NgModule({

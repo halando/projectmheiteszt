@@ -1,0 +1,37 @@
+#button1{
+    float:right;
+    margin-right: 10px;
+}
+#button2{
+    float: right;
+    margin-right: 500px;
+}
+#button3{
+    float:left;
+    margin-left: 10px;
+}
+#button4{
+    float: right;
+    
+}
+#button5{
+    float:right
+}
+#button6{
+    float: right;
+}
+#button7{
+    float: right;
+}
+#button8
+{
+    float: right;
+}
+h5{
+   
+    font-weight: bold;
+    text-decoration: underline;
+}
+a{
+    color: black;
+}

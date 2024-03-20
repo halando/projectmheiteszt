@@ -1,8 +1,32 @@
-h5{
-    color:khaki;
+h5 {
+    color: khaki;
     font-weight: bold;
 }
-p{
-    color:black;
+
+p {
+    color: black;
     font-weight: bold;
+}
+
+#carouselExampleCaptions {
+    
+    margin-left: 60px;
+    margin-right: 40px;
+    width: 1400px;
+    height: 700px;
+}
+
+#img1 {
+    height: 400px;
+    width: 200px;
+}
+.hero{
+    background-color: whitesmoke;
+    
+}
+a{
+  text-decoration: whitesmoke;
+}
+button{
+    float: right;
 }

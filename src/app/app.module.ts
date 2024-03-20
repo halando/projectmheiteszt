@@ -31,7 +31,7 @@ import { MatExpansionModule} from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
@@ -64,7 +64,8 @@ import {MatTableModule} from '@angular/material/table';
     MatExpansionModule,
     MatGridListModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
