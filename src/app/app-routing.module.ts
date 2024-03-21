@@ -37,7 +37,7 @@ const routes: Routes = [
   {path:'fish', component:FishComponent},
   {path:'events', component:EventsComponent},
   {path:'additional', component:AdditionalComponent},
-  //{path:'**',component:ErrorComponent},
+  {path:'**',component:ErrorComponent},
 ];
 
 @NgModule({

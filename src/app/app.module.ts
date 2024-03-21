@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
 import { KezdolapComponent } from './pages/kezdolap/kezdolap.component';
@@ -23,7 +23,7 @@ import { FishComponent } from './additional-pages/fish/fish.component';
 import { AdditionalComponent } from './additional-pages/additional/additional.component';
 import { EventsComponent } from './additional-pages/events/events.component';
 import { VersenyekComponent } from './additional-pages/versenyek/versenyek.component';
-import { ErrorComponent } from './pages/error/error.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -32,6 +32,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
+import { ErrorComponent } from './pages/error/error.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     MatGridListModule,
     MatListModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

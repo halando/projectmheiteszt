@@ -1,4 +1,5 @@
 <div class="hero">
+    
 <form >
     <div class="row">
         <div class="input-group">
@@ -19,7 +20,7 @@
         <textarea id="message" rows="8" required></textarea>
         <label for="message"><i class="bi bi-chat-dots-fill"></i>Üzenet</label>
     </div>
-    <button type="submit"><i class="bi bi-send"></i>Küldés</button>
-
+    
+    <button (click)="sendMail()" type="button" class="btn btn-outline-primary">Küldés</button>
 </form>
 </div>
