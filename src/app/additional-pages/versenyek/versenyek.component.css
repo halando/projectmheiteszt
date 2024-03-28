@@ -1,6 +1,7 @@
+
 table {
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(246, 169, 3);
   }
   button{
     float: right;
@@ -13,3 +14,7 @@ table {
     font-weight: bold;
     color: whitesmoke;
   }
+  td{
+    color: black;
+    font-weight: bold;
+}
