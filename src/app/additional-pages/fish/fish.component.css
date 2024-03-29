@@ -1,43 +1,17 @@
 .hero {
   width: 100%;
-  height: 220vh;
-  background-image: url('../../../assets/img/halfajok/SF6.jpg');
+  height: 100vh;
+  background-color: orange;
   background-position: center;
   background-size: cover;
-  display:inline-block;
+  display:flex;
   align-items: center;
 }
-
-
-/*.dropdown-content {
-  display: none;
+#img1{
+  width: 12000px;
+  height: 400px;
+  margin-top: -600px;
 }
-
-#toggle:checked+.dropdown-content {
-  display: block;
-}*/
-
-img {
-  float: right;
- 
-  width: 300px;
-  height: 100px;
-  margin-top: 15px;
-  right: -20px;
-  position: absolute;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-}
-mat-accordion{
-  position: center;
-  margin-left: 300px;
-  border-radius: 20px;
-  overflow: hidden;
-  width: 1000px;
-}
-
-h1{
-  margin-bottom: 1500px;
-  color: whitesmoke;
-  margin-left: 750px;
+.card-group{
+  margin-top: 150px;
 }

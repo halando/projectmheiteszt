@@ -1,12 +1,52 @@
 <div class="hero">
-  <div  id="engedely" class="jegy">
-    <button id="button1" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-      data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Horgász engedély</button>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div id="card1" class="card">
+        <img id="img-card" src="../../../assets/img/jegyek/horgaszigazolvany.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">horgászengedély</h5>
+          <p class="card-text">Ezen a menüponton találhatja meg a horgász engedéllyel kapcsolatos infomációkat
+            <br> és a horgász vizsgával kapcsolatos árakat, időpontokat, helyszíneket és
+            <br>az ezekkel kapcsolatos további teendőket.
+          </p>
+          <button id="button1" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Horgász engedély</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div id="card2" class="card">
+        <img id="img-card" src="../../../assets/img/jegyek/jegyvásárlóhelyek.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Horgász boltok</h5>
+          <p class="card-text">Ezen a menüponton tájékozódhat arról, hogy hol
+            <br> lehet találni horgászboltokat,
+            <br> ahol jegyeket tud vásárolni.
+          </p>
+          <button id="button2" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Jegy vásárló helyek</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div id="card3" class="card">
+        <img id="img-card" src="../../../assets/img/jegyek/napijegyektablazat.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Napijegy táblázatok</h5>
+          <p class="card-text">Ezen a menüponton lehet megnézi a horgász napi jegy árakat és a velük járó
+            kedvezményeket.</p>
+          <button id="button3" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Napijegy
+            táblázatok</button>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <button id="button2" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">Jegy vásárló helyek</button>
-  <button id="button3" class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Napijegy táblázatok</button>
+
+
+
+
 
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -99,24 +139,27 @@
     </div>
     <div class="offcanvas-body">
       <mat-list role="list">
-        <mat-list-item role="listitem"><a href="http://www.fohesz.hu/oldal.php?oldal=egyesuletek">Budapest, Avar utca 2
+        <mat-list-item role="listitem"><a id="helyek" href="http://www.fohesz.hu/oldal.php?oldal=egyesuletek">Budapest,
+            Avar utca 2
           </a></mat-list-item>
-        <mat-list-item role="listitem"><a
+        <mat-list-item role="listitem"><a id="helyek"
             href="https://portal.nebih.gov.hu/noveny-talaj-es-agrarkornyezet-vedelmi-igazgatosag">Budapest, Budaörsi út
             141-145 </a></mat-list-item>
-        <mat-list-item role="listitem"><a href="http://hhnhe.hu/user"> Budapest, Korányi Sándor utca 4
+        <mat-list-item role="listitem"><a id="helyek" href="http://hhnhe.hu/user"> Budapest, Korányi Sándor utca 4
           </a></mat-list-item>
-        <mat-list-item role="listitem"><a
+        <mat-list-item role="listitem"><a id="helyek"
             href="http://www.magyarszakmaitudakozo.hu/index.php/foldal/sport-sportegyesulet-spotszer-horgaszat/horgaszat/rakosmezeje-MGTSZ-horgaszgeyesulet-ecseri-horgaszto.html">Ecser,
             Arany János utca 10 </a></mat-list-item>
-        <mat-list-item role="listitem"><a href="http://www.dubicstamas.battanet.hu/">Százhalombatta, Ifjúság útja 7
+        <mat-list-item role="listitem"><a id="helyek" href="http://www.dubicstamas.battanet.hu/">Százhalombatta, Ifjúság
+            útja 7
           </a></mat-list-item>
-        <mat-list-item role="listitem"><a
+        <mat-list-item role="listitem"><a id="helyek"
             href="https://www.rdhsz.hu/index.php/24-tagegyesuleteink/56-vegyes-uzemi-dolgozok-he">Tököl, Kolozsvári utca
             33 </a></mat-list-item>
-        <mat-list-item role="listitem"><a href="http://www.level.hu/leveli-horgaszegyesulet.html">Levél, Alsófő utca 9
+        <mat-list-item role="listitem"><a id="helyek" href="http://www.level.hu/leveli-horgaszegyesulet.html">Levél,
+            Alsófő utca 9
           </a></mat-list-item>
-        <mat-list-item role="listitem"><a href="https://www.tokajikovacsto.hu/foglalas">Tokaj, Ladányi út 1
+        <mat-list-item role="listitem"><a id="helyek" href="https://www.tokajikovacsto.hu/foglalas">Tokaj, Ladányi út 1
           </a></mat-list-item>
         <button id="button5" type="button" class="btn btn-primary"><a
             href="https://horgaszjegy.hu/ht/horgaszoknak/fooldal"> További üzletek</a></button>
