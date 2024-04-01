@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-jegy',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./jegy.component.css']
 })
 export class JegyComponent {
+  constructor(private spinner:NgxSpinnerService){}
 
+  openSpinner(){
+    this.spinner.show();
+    setTimeout(()=>{
+      this.spinner.hide();
+    }, 60000)
+  }
 }

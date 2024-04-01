@@ -1,16 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../auth.service';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
+  lang:string ='';
+
   currentUser:any
   SAdmin=false
-  constructor(private auth:AuthService, private router:Router){
+
+ngOnInit(): void {
+  
+
+  this.lang = localStorage.getItem('lang') ||'hu';
+}
+
+  constructor(private auth:AuthService, private router:Router,private translateService:TranslateService){
     this.auth.getCurrentUser().subscribe(
       (user)=>this.currentUser=user
     )
@@ -23,4 +34,12 @@ export class NavbarComponent {
     this.auth.logout()
     this.router.navigate(['/signin'])
   }
+  ChangeLanguage(lang:any){
+    const selectedLanguage = lang.target.value;
+
+    localStorage.setItem('lang',selectedLanguage);
+
+    this.translateService.use(selectedLanguage);
+  }
+ 
 }
